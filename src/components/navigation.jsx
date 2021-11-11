@@ -1,15 +1,15 @@
 export default function Navigation() {
   return (
     <div>
-      <div className="h-1 bg-secondary rounded-lg mb-4"></div>
-      <nav className="flex justify-between gap-10 text-secondary">
-        <a className="">Amount</a>
+      <div className=" rounded-lg mb-4" style={{height:"4px", backgroundColor: "#EDEDED"}}></div>
+      <nav className="flex justify-between gap-10 text-secondary font-normal text-base">
+        <button className="" >Amount</button>
 
-        <a className="">Recipient</a>
+        <button className="">Recipient</button>
 
-        <a className="">Receiver</a>
+        <button className="">Receiver</button>
 
-        <a className="">Pay</a>
+        <button className="">Pay</button>
       </nav>
     </div>
   );

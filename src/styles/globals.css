@@ -13,11 +13,6 @@
   src: url("../fonts/Sailec-Medium.ttf") format("truetype");
   font-weight: 400;
 }
-@font-face {
-  font-family: sailec;
-  src: url("../fonts/Sailec-Bold.ttf") format("truetype");
-  font-weight: 800;
-}
 
 html,
 body {
@@ -27,6 +22,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 a {

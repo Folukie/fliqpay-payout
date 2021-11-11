@@ -52,7 +52,7 @@ const FirstStep = () => {
                       fill="#8B8F96"
                     />
                   </svg>
-                  <span className="font-medium">
+                  <span className="font-normal">
                     {Number(PAYOUT_FEE * sendAmount).toFixed(2)} USD
                   </span>
                 </td>
@@ -96,7 +96,7 @@ const FirstStep = () => {
                       fill="#8B8F96"
                     />
                   </svg>
-                  <span className="font-medium">
+                  <span className="font-normal">
                     {rates[recipientCurrency]}{" "}
                   </span>
                 </td>
@@ -120,8 +120,9 @@ const FirstStep = () => {
           <ReactTooltip />
           <button
             type="button"
-            className="border-2 border-primary-light text-primary-light font-medium rounded-md h-14"
+            className="border-2 border-primary-light text-primary-light font-medium rounded-md h-14 cursor-not-allowed"
             data-tip="Unavailable"
+            
           >
             Compare Rates
           </button>

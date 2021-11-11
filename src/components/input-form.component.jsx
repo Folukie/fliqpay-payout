@@ -13,7 +13,7 @@ const AmountInput = ({ placeholder, input, select, onChange, options }) => {
         autoComplete="off"
         required
       />
-      <h5 className="absolute top-2 left-2 text-xs text-secondary-light z-100">
+      <h5 className="absolute top-2 left-4 text-xs text-secondary-light z-100">
         {placeholder}
       </h5>
 

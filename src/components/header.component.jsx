@@ -8,7 +8,7 @@ const Header = () => {
       <div className="grid grid-cols-3 justify-center items-center bg-white py-6 sm:grid-cols-2 sm:gap-20 ">
         <Image
           alt="fliqpay icon"
-          src="/images/fliqpay-logo.png"
+          src="/images/fliqpay-logo.svg"
           width={33}
           height={33}
           className="object-contain "

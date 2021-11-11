@@ -4,17 +4,20 @@ import { LOCATION_TYPES } from "./payout-form.component";
 import RecipientInput from "./recipient-input.component";
 import CustomTab from "./tab.component";
 import PayoutContext from "../../payout-context";
+import { NavigationContext, PAGE_NAMES } from "../../navigation-context";
 
 
-const SecondStep = ({ goNext }) => {
-  const { state, rates, currencies, handleChange } = useContext(PayoutContext);
+const SecondStep = () => {
+  const { state, handleChange } = useContext(PayoutContext);
+  const [page, setPage] = useContext(NavigationContext)
+
   const [formData] = state;
   const onChange = handleChange
 
   const { email, fullName, swift, accountNumber, locationType } = formData;
   const onSubmit = (e) => {
     e.preventDefault();
-    goNext();
+   setPage(PAGE_NAMES.receiver)
   };
 
   return (

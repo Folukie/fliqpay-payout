@@ -15,7 +15,8 @@ Then, run the application in development mode.
 
 
 ## Requirements not covered
-The country flags are not included 
+- The country flags are not included 
+- Navigation slide yet to be completion
 
 ## Issues faced
 

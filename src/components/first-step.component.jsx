@@ -4,16 +4,19 @@ import Card from "./card.component";
 import AmountInput from "./input-form.component";
 import ReactTooltip from "react-tooltip";
 import PayoutContext from "../../payout-context";
+import { NavigationContext, PAGE_NAMES } from "../../navigation-context";
 
-const FirstStep = ({ goNext }) => {
+const FirstStep = () => {
   const { state, rates, currencies, handleChange } = useContext(PayoutContext);
+  const [page, setPage] = useContext(NavigationContext)
   const [formData] = state;
   const onChange = handleChange
   const { sendAmount, sendCurrency, recipientAmount, recipientCurrency } =
     formData;
   const onSubmit = (e) => {
     e.preventDefault();
-    goNext();
+    setPage(PAGE_NAMES.recipient)
+    
   };
 
   return (

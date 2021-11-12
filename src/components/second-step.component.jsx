@@ -80,9 +80,13 @@ const SecondStep = () => {
         )}
 
         <button
-          className="w-full bg-primary-light text-white h-14 rounded-md my-6"
+         
+          className={`w-full my-6 ${
+            accountNumber ? "bg-primary-light" : "bg-button_disabled"
+          } text-white rounded-md h-14 font-medium`}
           type="submit"
-          disabled={!email}
+         
+          disabled={!accountNumber}
         >
           Continue
         </button>

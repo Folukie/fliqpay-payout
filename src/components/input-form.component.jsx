@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const AmountInput = ({ placeholder, input, select, onChange, options }) => {
+const AmountInput = ({ placeholder, input, select, onChange, options, readOnly }) => {
   return (
     <div className="mt-6 mb-3 flex w-full mx-auto relative">
       <input
@@ -12,6 +12,7 @@ const AmountInput = ({ placeholder, input, select, onChange, options }) => {
         onChange={onChange}
         autoComplete="off"
         required
+        readOnly={readOnly}
       />
       <h5 className="absolute top-2 left-4 text-xs text-secondary-light z-100">
         {placeholder}

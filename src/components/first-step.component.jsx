@@ -114,8 +114,8 @@ const FirstStep = () => {
           input={{ name: "recipientAmount", value: recipientAmount }}
           select={{ name: "recipientCurrency", value: recipientCurrency }}
           onChange={onChange}
-          readOnly
-          disabled
+          readOnly= "true"
+      
         />
         <div className="grid grid-cols-2 gap-5 mt-10 mb-4 sm:grid-cols-1">
           <ReactTooltip />
